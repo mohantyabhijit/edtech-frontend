@@ -21,7 +21,7 @@ class App extends Component {
             <Route exact path="/new-item" component={AddToDo} />
           </Col>
         </Row> */}
-        {/* <Login></Login> */}
+        <Login></Login>
       </Container>
     );
   }
