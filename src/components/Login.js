@@ -4,10 +4,13 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { AccountContext } from '../components/Account';
 
-const [email, setEmail] = useState('');
-const [password, setPassword] = useState('');
+var email, password, authenticate;
 
-const { authenticate } = useContext(AccountContext);
+function SetUp(){
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const { authenticate } = useContext(AccountContext);
+}
 
 const onSubmit = event => {
     event.preventDefault();
