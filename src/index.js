@@ -5,18 +5,17 @@ import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 
 import App from './App';
-import { loadToDoList, loadBlogList } from './actions';
-import toDoApp from './reducers';
+import { loadBlogList } from './actions';
+import apolloApp from './reducers';
 
 import rootSaga from './sagas';
 import { BrowserRouter } from 'react-router-dom';
 const sagaMiddleware = createSagaMiddleware();
 
-const store = createStore(toDoApp, applyMiddleware(sagaMiddleware));
+const store = createStore(apolloApp, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(rootSaga);
 
-store.dispatch(loadToDoList());
 store.dispatch(loadBlogList());
 
 render(

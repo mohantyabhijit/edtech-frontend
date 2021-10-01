@@ -9,8 +9,10 @@ const mapStateToProps = state => {
   // console.log(blog);
   // console.log(blog.blogText);
   // const {blog} = state;
+  // const blogData = state.toJson();
+  // console.log(blogData);
   return {
-    blogs: state.blog
+    blogs: state, 
   };
 };
 
