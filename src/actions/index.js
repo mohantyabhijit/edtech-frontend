@@ -4,8 +4,8 @@ export const RENDER_TODO_LIST = 'RENDER_TODO_LIST';
 export const RENDER_BLOG = 'RENDER_BLOG';
 
 
-  export function loadBlogList() {
-    return {
-      type: RENDER_BLOG
-    };
-  }
+export function loadBlogList() {
+  return {
+    type: RENDER_BLOG
+  };
+}
